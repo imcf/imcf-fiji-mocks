@@ -13,6 +13,7 @@ You'll need [poetry][3] installed locally, then using fish run:
 ```fish
 for PKG in java ij inra loci
     cd $PKG
+    rm -r dist/
     poetry build -vv
     cd -
 end
