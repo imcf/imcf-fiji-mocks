@@ -1,0 +1,2 @@
+ImageReader = None
+Memoizer = None
