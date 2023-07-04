@@ -1,0 +1,13 @@
+[tool.poetry]
+authors = ["Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>"]
+description = "Mock lib providing fake 'mcib3d' imports."
+name = "mcib3d"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

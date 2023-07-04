@@ -1,0 +1,2 @@
+ImageHandler = None
+ImageLabeller = None
