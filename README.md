@@ -11,7 +11,7 @@ missing imports when building the AST (abstract syntax tree).
 You'll need [poetry][3] installed locally, then using fish run:
 
 ```fish
-for PKG in java ij inra loci
+for PKG in ij inra java loci mcib3d
     cd $PKG
     rm -r dist/
     poetry build -vv
