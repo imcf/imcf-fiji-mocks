@@ -1,0 +1,22 @@
+[tool.poetry]
+authors = ["Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>"]
+description = "Mocks collection for Fiji-Python. Zero functional code."
+name = "imcf-fiji-mocks"
+
+packages = [
+  {include = "ij", from = "src"},
+  {include = "inra", from = "src"},
+  {include = "java", from = "src"},
+  {include = "loci", from = "src"},
+  {include = "mcib3d", from = "src"},
+]
+
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

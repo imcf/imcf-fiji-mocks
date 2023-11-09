@@ -1,37 +1,34 @@
-# Mocks 🧌 for `pdoc`
+# Python mocks 🧌 package for `Fiji` related code
 
-Required to generate [IMCF Fiji Python packages API docs][1].
+Initially created for enabling [pdoc][2] to generate [IMCF Fiji Python packages
+API docs][1]. Now also used to run [pytest][4] on e.g. the [python-imcflibs][5]
+package.
 
-This repo contains mocks that can be used to build fake (thin) `pip install`able
-Python packages that will prevent [pdoc][2] from failing due to
-missing imports when building the AST (abstract syntax tree).
+The goal of this repo is to provide mocks that can be used to build a fake
+(thin) `pip install`able Python package that will allow tools like *pdoc* or
+*pytest* to build up the AST (abstract syntax tree) by using the mocked objects
+while performing the imports.
 
 ## Building artifacts
 
 You'll need [poetry][3] installed locally, then using fish run:
 
 ```fish
-for PKG in ij inra java loci mcib3d
-    cd $PKG
-    rm -r dist/
-    poetry build -vv
-    cd -
-end
+rm -r dist/
+poetry build -vv
 ```
 
 ## Using release artifacts from GitHub
 
 To create a virtualenv you may use artifacts attached to a public release on
-Github, for example using the `2023-02-22` release:
+Github, for example using the `0.1.0` release:
 
 ```fish
-set URL_PFX "https://github.com/imcf/imcf-fiji-pdoc-mocks/releases/download/2023-02-22"
+set REL "0.1.0"
+set URL_PFX "https://github.com/imcf/imcf-fiji-mocks/releases/download/v$REL"
 
 pip install --upgrade \
-    $URL_PFX/inra-0.1.1-py3-none-any.whl \
-    $URL_PFX/java-0.1.0-py3-none-any.whl \
-    $URL_PFX/loci-0.1.1-py3-none-any.whl \
-    $URL_PFX/ij-0.1.19-py3-none-any.whl \
+    $URL_PFX/imcf_fiji_mocks-$REL-py3-none-any.whl \
     $URL_PFX/micrometa-15.2.2-py3-none-any.whl \
     $URL_PFX/sjlogging-0.1.0-py3-none-any.whl \
     pdoc \
