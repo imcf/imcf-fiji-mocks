@@ -39,3 +39,5 @@ pip install --upgrade \
 [1]: https://imcf.one/apidocs/
 [2]: https://pdoc.dev
 [3]: https://python-poetry.org
+[4]: http://pytest.org/
+[5]: https://github.com/imcf/python-imcflibs/
