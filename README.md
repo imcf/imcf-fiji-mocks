@@ -21,16 +21,16 @@ poetry build -vv
 ## Using release artifacts from GitHub
 
 To create a virtualenv you may use artifacts attached to a public release on
-Github, for example using the `0.1.0` release:
+Github, for example using the `0.2.1` release:
 
 ```fish
-set REL "0.1.0"
+set REL "0.2.1"
 set URL_PFX "https://github.com/imcf/imcf-fiji-mocks/releases/download/v$REL"
 
 pip install --upgrade \
-    $URL_PFX/imcf_fiji_mocks-$REL-py3-none-any.whl \
-    $URL_PFX/micrometa-15.2.2-py3-none-any.whl \
-    $URL_PFX/sjlogging-0.1.0-py3-none-any.whl \
+    $URL_PFX/imcf_fiji_mocks-$REL-py2.py3-none-any.whl \
+    $URL_PFX/micrometa-15.2.2-py2.py3-none-any.whl \
+    $URL_PFX/sjlogging-0.5.2-py2.py3-none-any.whl \
     pdoc \
     olefile \
     pip
