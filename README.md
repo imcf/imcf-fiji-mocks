@@ -9,10 +9,10 @@ The goal of this project is to provide mocks that can be used to build a fake
 *pytest* to build up the AST (abstract syntax tree) by using the mocked objects
 while performing the imports.
 
-## WARNING
+## 🚫 WARNING 🚫
 
-🚫 This project and its packages do **not** contain any functional code that is
-useful in situations other than the ones described above! 🚫
+This project and its packages do **not** contain any functional code that is
+useful in situations other than the ones described above!
 
 ## Building artifacts
 
