@@ -4,14 +4,19 @@ Initially created for enabling [pdoc][2] to generate [IMCF Fiji Python packages
 API docs][1]. Now also used to run [pytest][4] on e.g. the [python-imcflibs][5]
 package.
 
-The goal of this repo is to provide mocks that can be used to build a fake
+The goal of this project is to provide mocks that can be used to build a fake
 (thin) `pip install`able Python package that will allow tools like *pdoc* or
 *pytest* to build up the AST (abstract syntax tree) by using the mocked objects
 while performing the imports.
 
+## WARNING
+
+🚫 This project and its packages do **not** contain any functional code that is
+useful in situations other than the ones described above! 🚫
+
 ## Building artifacts
 
-You'll need [poetry][3] installed locally, then using fish run:
+You'll need [poetry][3] installed locally, then using `fish` run:
 
 ```fish
 rm -r dist/
