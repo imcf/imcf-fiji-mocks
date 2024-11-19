@@ -5,6 +5,8 @@
 Added mocks:
 
 - `fiji.plugin.trackmate` (quite a bunch)
+- `java.lang.Double`
+
 ## 0.2.1
 
 Some more mocks:
