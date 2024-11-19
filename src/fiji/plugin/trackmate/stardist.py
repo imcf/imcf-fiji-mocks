@@ -1,0 +1,1 @@
+StarDistDetectorFactory = None

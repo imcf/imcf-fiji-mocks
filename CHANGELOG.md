@@ -1,5 +1,10 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.3.0
+
+Added mocks:
+
+- `fiji.plugin.trackmate` (quite a bunch)
 ## 0.2.1
 
 Some more mocks:

@@ -5,6 +5,7 @@ include = ["CHANGELOG.md"]
 name = "imcf-fiji-mocks"
 
 packages = [
+  {include = "fiji", from = "src"},
   {include = "ij", from = "src"},
   {include = "inra", from = "src"},
   {include = "java", from = "src"},
@@ -13,7 +14,7 @@ packages = [
 ]
 
 readme = "README.md"
-version = "0.2.1"
+version = "0.3.0.a1"
 
 [tool.poetry.dependencies]
 python = ">=2.7"
