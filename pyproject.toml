@@ -6,6 +6,7 @@ name = "imcf-fiji-mocks"
 
 packages = [
   {include = "fiji", from = "src"},
+  {include = "fr", from = "src"},
   {include = "ij", from = "src"},
   {include = "inra", from = "src"},
   {include = "java", from = "src"},

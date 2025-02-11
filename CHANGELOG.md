@@ -5,6 +5,7 @@
 Added mocks:
 
 - `java.lang.Long`
+- `fr.igred.omero`
 
 ## 0.3.0
 
