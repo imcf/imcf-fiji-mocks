@@ -1,5 +1,11 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.4.0
+
+Added mocks:
+
+- `java.lang.Long`
+
 ## 0.3.0
 
 Added mocks:
