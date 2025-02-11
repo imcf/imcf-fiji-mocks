@@ -1,0 +1,96 @@
+name: 🚚🌍 Publish on 🎪 PyPI
+
+on:
+
+  release:
+    types: [published]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+
+  release-build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+      name: 📥 Checkout repo
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: 🗃 Cache Poetry install
+      uses: actions/cache@v4
+      with:
+        path: ~/.local
+        key: poetry-2.0.1-0
+
+    # The key configuration value here is `virtualenvs-in-project: true`: this
+    # creates the venv as a `.venv` in your testing directory, which allows
+    # the next step to easily cache it.
+    - name: 🔩🔧 Install 🎭 Poetry
+      uses: snok/install-poetry@v1
+      with:
+        version: 2.0.1
+        virtualenvs-create: true
+        virtualenvs-in-project: true
+
+    # Cache dependencies (i.e. all the stuff in your `pyproject.toml`).
+    - name: 🗃 Cache 🧾 Dependencies
+      id: cache-deps
+      uses: actions/cache@v4
+      with:
+        path: .venv
+        key: pydeps-${{ hashFiles('**/poetry.lock') }}
+
+    - name: 🎭 Install Poetry dynamic-versioning 🔌 plugin
+      run: poetry self add "poetry-dynamic-versioning[plugin]"
+
+    # Install dependencies. `--no-root` means "install all dependencies but
+    # not the project itself", which is what you want to avoid caching _your_
+    # code. The `if` statement ensures this only runs on a cache miss.
+    - name: 🎭 Install 🧾 Dependencies
+      run: poetry install --no-interaction --no-root
+      if: steps.cache-deps.outputs.cache-hit != 'true'
+
+    - name: 🎭 Install 🛖 project
+      run: poetry install --no-interaction
+
+    - name: 🎭👷 Build 🧱 project
+      run: poetry build
+
+    - name: 📤 Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-dists
+        path: dist/
+
+  pypi-publish:
+
+    runs-on: ubuntu-latest
+
+    needs:
+      - release-build
+
+    permissions:
+      id-token: write
+
+    environment:
+      name: release
+
+    steps:
+      - name: 📥 Retrieve release 📦 distributions
+        uses: actions/download-artifact@v4
+        with:
+          name: release-dists
+          path: dist/
+
+      - name: 🥁 Publish release distributions to 🎪 PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/
