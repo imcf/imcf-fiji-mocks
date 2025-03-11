@@ -1,5 +1,11 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.5.0
+
+Added mocks:
+
+- `ch.epfl.biop`
+
 ## 0.4.0
 
 Added mocks:
