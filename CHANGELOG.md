@@ -1,5 +1,17 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.6.0
+
+Added mocks:
+
+- `de.mpicbg.scf`
+- `net.imglib2`
+
+Updated mocks:
+
+- `mcib3d.image3d`
+- `ch.epfl.biop`
+
 ## 0.5.0
 
 Added mocks:
