@@ -1,0 +1,1 @@
+ImagePlusAdapter = None

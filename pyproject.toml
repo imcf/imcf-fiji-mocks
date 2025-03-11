@@ -14,6 +14,7 @@ packages = [
   {include = "java", from = "src"},
   {include = "loci", from = "src"},
   {include = "mcib3d", from = "src"},
+  {include = "net", from = "src"},
 ]
 
 readme = "README.md"
