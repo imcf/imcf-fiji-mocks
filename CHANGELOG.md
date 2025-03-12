@@ -1,5 +1,11 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.7.0
+
+Added mocks:
+
+- `net.imagej`
+
 ## 0.6.0
 
 Added mocks:
