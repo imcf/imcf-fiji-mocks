@@ -1,1 +1,2 @@
 MapAnnotationWrapper = None
+TableWrapper = None

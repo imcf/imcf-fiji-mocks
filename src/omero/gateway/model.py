@@ -1,0 +1,2 @@
+TableData = None
+TableDataColumn = None

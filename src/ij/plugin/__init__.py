@@ -6,3 +6,4 @@ RoiEnlarger = None
 RoiScaler = None
 RGBStackMerge = None
 Concatenator = None
+StackWriter = None
