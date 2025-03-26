@@ -1,14 +1,15 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
-## 0.8.1
+## 0.9.0
 
-Fix project / packaging settings.
+Fix project / packaging settings, this time adding the `omero` mocks to the
+package for real.
 
 ## 0.8.0
 
 Added mocks:
 
-- `omero`
+- `omero` (unfortunately forgotten in packaging)
 
 Updated mocks:
 
