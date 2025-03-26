@@ -19,6 +19,7 @@ packages = [
   { include = "loci", from = "src" },
   { include = "mcib3d", from = "src" },
   { include = "net", from = "src" },
+  { include = "omero", from = "src" },
 ]
 
 readme = "README.md"
