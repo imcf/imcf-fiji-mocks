@@ -3,9 +3,11 @@
 ## 0.8.0
 
 Added mocks:
+
 - `omero`
 
 Updated mocks:
+
 - `java`
 - `fr.igred.omero`
 - `ij.plugin`
