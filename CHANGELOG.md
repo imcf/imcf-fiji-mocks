@@ -1,5 +1,9 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.8.1
+
+Fix project / packaging settings.
+
 ## 0.8.0
 
 Added mocks:
