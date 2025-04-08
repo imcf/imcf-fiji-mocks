@@ -4,7 +4,7 @@
 
 Added mocks:
 
-- `fiji.plugin.trackmate.actions.LabelImgExporter.LabelIdPainting`
+- `fiji.plugin.trackmate.action.LabelImgExporter.LabelIdPainting`
 
 ## 0.9.0
 
