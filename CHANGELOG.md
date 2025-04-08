@@ -1,6 +1,7 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
 ## 0.10.0
+
 Added mocks:
 
 - `fiji.plugin.trackmate.actions.LabelImgExporter.LabelIdPainting`
