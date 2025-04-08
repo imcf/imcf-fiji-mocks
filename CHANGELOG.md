@@ -1,5 +1,10 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.10.0
+Added mocks:
+
+- `fiji.plugin.trackmate.actions.LabelImgExporter.LabelIdPainting`
+
 ## 0.9.0
 
 Fix project / packaging settings, this time adding the `omero` mocks to the
