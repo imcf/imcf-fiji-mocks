@@ -3,7 +3,8 @@ name: 🚚🌍 Publish on 🎪 PyPI
 on:
 
   release:
-    types: [published]
+    types:
+      - published  # A release, pre-release, or draft of a release was published.
 
   workflow_dispatch:
 
