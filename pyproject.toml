@@ -21,7 +21,7 @@ packages = [
   { include = "mcib3d", from = "src" },
   { include = "net", from = "src" },
   { include = "omero", from = "src" },
-  { include = "org", from = "src" }
+  { include = "org", from = "src" },
 ]
 
 readme = "README.md"
