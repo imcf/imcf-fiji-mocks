@@ -16,10 +16,12 @@ packages = [
   { include = "ij", from = "src" },
   { include = "inra", from = "src" },
   { include = "java", from = "src" },
+  { include = "javax", from = "src },
   { include = "loci", from = "src" },
   { include = "mcib3d", from = "src" },
   { include = "net", from = "src" },
   { include = "omero", from = "src" },
+  { include = "org", from = "src" }
 ]
 
 readme = "README.md"
