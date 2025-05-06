@@ -1,5 +1,13 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.11.0
+
+Added mocks:
+
+- `java.io`
+- `javax.xml.parsers`
+- `org.xml.sax`
+
 ## 0.10.0
 
 Added mocks:
