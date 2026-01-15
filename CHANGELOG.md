@@ -1,5 +1,12 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.12.0
+
+Added mocks:
+
+- `org.scijava.widget.WidgetStyle`
+- `org.scijava.widget.TextWidget`
+
 ## 0.11.0
 
 Added mocks:
