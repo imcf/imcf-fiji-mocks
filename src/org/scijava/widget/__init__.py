@@ -1,0 +1,2 @@
+WidgetStyle = None
+TextWidget = None
