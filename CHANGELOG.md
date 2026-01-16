@@ -1,5 +1,16 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.13.0
+
+Added mocks:
+
+- `loci.common.Region`
+
+Fixed module syntax:
+
+- `org.xml`
+- `org.scijava`
+
 ## 0.12.0
 
 Added mocks:
