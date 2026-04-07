@@ -1,5 +1,10 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.14.0
+
+Added mocks:
+
+- `ij.IJ.log` (a _staticmethod_ of the IJ class, issuing a log message)
 ## 0.13.0
 
 Added mocks:

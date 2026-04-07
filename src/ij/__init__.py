@@ -12,7 +12,7 @@ _log.setLevel(logging.DEBUG)
 
 
 class IJ(object):
-    """Dummy class providing a way to call `IJ.run()`.
+    """Dummy class providing a way to call `IJ.run()`, `IJ.log()`.
 
     The sole purpose of this is to be used with pytest by simply issuing a log
     message containing the requested command and its parameters in a
@@ -22,3 +22,7 @@ class IJ(object):
     @staticmethod
     def run(cmd, params):
         _log.warning("IJ.run(cmd=[%s], params=[%s])", cmd, params)
+
+    @staticmethod
+    def log(msg):
+        _log.info("IJ.log(msg=[%s])", msg)
