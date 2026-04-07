@@ -5,6 +5,8 @@
 Added mocks:
 
 - `ij.IJ.log` (a _staticmethod_ of the IJ class, issuing a log message)
+- `inra.ijpb.plugins.RemoveBorderLabelsPlugin`
+
 ## 0.13.0
 
 Added mocks:

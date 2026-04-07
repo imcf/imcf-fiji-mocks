@@ -1,1 +1,2 @@
 AnalyzeRegions = None
+RemoveBorderLabelsPlugin = None
