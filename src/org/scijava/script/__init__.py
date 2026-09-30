@@ -6,15 +6,18 @@ from ..module import ModuleItem
 class ScriptInfo:
     """Mock for the "org.scijava.script.ScriptInfo" class."""
 
-    def __init__(self, input_names):
+    def __init__(self, input_names, location=None):
         """ScriptInfo constructor.
 
         Parameters
         ----------
         input_names : list(str)
             FIXME: describe (see the ScriptModule class)
+        location : str or None
+            The URL string of the script location.
         """
         self.input_names = [ModuleItem(x) for x in input_names]
+        self.location = location
 
     def inputs(self):
         """Get the list of input-objects.
