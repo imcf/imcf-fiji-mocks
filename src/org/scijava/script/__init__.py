@@ -24,6 +24,15 @@ class ScriptInfo:
         list(ModuleItem)
         """
         return self.input_names
+    
+    def getLocation(self):
+        """Get the URL string of the script location.
+
+        Returns
+        -------
+        str or None
+        """
+        return self.location
 
 
 class ScriptModule:
