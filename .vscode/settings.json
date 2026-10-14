@@ -3,6 +3,7 @@
         "inra",
         "javax",
         "mcib",
+        "pydeps",
         "scijava"
     ]
 }
