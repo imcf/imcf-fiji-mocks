@@ -10,7 +10,7 @@ class ModuleItem:
         Parameters
         ----------
         input_name : str
-            FIXME: describe (see the ScriptModule class)
+            The name of the object.
         """
         self.input_name = input_name
 
