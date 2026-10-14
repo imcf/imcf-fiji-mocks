@@ -1,5 +1,14 @@
 # Changelog 🧾 for `imcf-fiji-mocks`
 
+## 0.15.0
+
+Slightly more sophisticated mocks for `org.scijava`:
+
+- `org.scijava.script.ScriptInfo`:
+  - new attribute (and optional parameter for the constructor): `location`
+  - added method `getLocation`
+- `org.scijava.module.ModuleItem` (new)
+
 ## 0.14.0
 
 Added mocks:
